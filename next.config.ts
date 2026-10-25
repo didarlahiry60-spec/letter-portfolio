@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const repoName = "my-letter-portfolio-";
+const repoName = "letter-portfolio";
 const basePath = process.env.GITHUB_ACTIONS ? `/${repoName}` : "";
 
 const nextConfig: NextConfig = {

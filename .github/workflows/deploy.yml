@@ -37,7 +37,7 @@ jobs:
 
       - name: Build with Next.js
         env:
-          NEXT_PUBLIC_BASE_PATH: "/my-letter-portfolio-"
+          NEXT_PUBLIC_BASE_PATH: "/letter-portfolio"
         run: npx next build
 
       - name: Upload artifact
