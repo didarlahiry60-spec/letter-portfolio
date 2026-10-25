@@ -1,13 +1,17 @@
 import type { NextConfig } from "next";
 
 const repoName = "my-letter-portfolio-";
+const basePath = process.env.GITHUB_ACTIONS ? `/${repoName}` : "";
 
 const nextConfig: NextConfig = {
   output: "export",
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || (process.env.GITHUB_ACTIONS ? `/${repoName}` : ""),
+  basePath: basePath,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 };
 
 export default nextConfig;

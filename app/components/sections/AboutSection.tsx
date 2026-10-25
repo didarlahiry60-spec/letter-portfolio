@@ -3,6 +3,7 @@ import Image from "next/image";
 import Card from "../Card";
 import { Timeline, TimelineItem } from "../Timeline";
 import { Bot, Globe, Smartphone, ShieldAlert, Download, Sparkles, MapPin, CheckCircle2 } from "lucide-react";
+import { getAssetPath } from "../../lib/basePath";
 
 const AboutSection: React.FC = () => {
   return (
@@ -27,7 +28,7 @@ const AboutSection: React.FC = () => {
         <div className="w-32 h-32 sm:w-40 sm:h-40 relative shrink-0">
           <Image
             className="rounded-full object-cover shadow-md border-4 border-white"
-            src="/profil-olive.webp"
+            src={getAssetPath("/profil-olive.webp")}
             alt="Didar Lahiry"
             fill
             sizes="(max-width: 640px) 128px, 160px"
@@ -112,7 +113,7 @@ const AboutSection: React.FC = () => {
 
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <a
-            href="/DIDAR-LAHIRY%20(Resume).pdf"
+            href={getAssetPath("/DIDAR-LAHIRY (Resume).pdf")}
             download="DIDAR-LAHIRY (Resume).pdf"
             target="_blank"
             rel="noopener noreferrer"

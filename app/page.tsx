@@ -4,6 +4,7 @@ import Image from "next/image";
 import Tab from "./components/Tab";
 import ScotchedPhoto from "./components/ScotchedPhoto";
 import StickerLabel from "./components/StickerLabel";
+import { getAssetPath } from "./lib/basePath";
 
 import AboutSection from "./components/sections/AboutSection";
 import SkillsSection from "./components/sections/SkillsSection";
@@ -114,12 +115,12 @@ export default function Home() {
           <StickerLabel text="IT'S ME DIDAR" containerClassName=" -rotate-9 translate-y-1/2" />
 
           <ScotchedPhoto
-            image={{ src: "/photoDidar.webp", width: 320, height: 400, alt: "Didar Lahiry" }}
+            image={{ src: getAssetPath("/photoDidar.webp"), width: 320, height: 400, alt: "Didar Lahiry" }}
             containerClassName=" w-[43%] translate-y-[18%] translate-x-[95%] skew-x-3 rotate-6 z-20"
           />
 
           <Image
-            src="/didar-stamp.png"
+            src={getAssetPath("/didar-stamp.png")}
             width="240"
             height="240"
             alt="AI Automation & Web Developer Verified"
