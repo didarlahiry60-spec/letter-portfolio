@@ -84,12 +84,11 @@ export default function Home() {
   return (
     // The screen is the positioning context for our centered div.
     <div className="relative h-screen bg-sky-50 dark:bg-stone-600">
-      <TiltScreenModal />
       <div
         ref={folderContainerRef}
-        className="absolute top-0 bottom-0 left-0 right-0 m-auto w-[80vw] h-[60vw] max-w-[106.67vh] max-h-[80vh] z-100">
+        className="absolute top-0 bottom-0 left-0 right-0 m-auto w-[92vw] h-[72vh] sm:w-[85vw] sm:h-[65vw] lg:w-[80vw] lg:h-[60vw] max-w-[106.67vh] max-h-[82vh] z-100">
         {/* Tabs over the folder */}
-        <nav className="absolute w-2/3 h-1/6 right-0 z-20 -translate-y-2/3 lg:-translate-y-1/2">
+        <nav className="absolute w-[95%] sm:w-2/3 h-10 sm:h-12 md:h-1/6 right-0 z-20 -translate-y-full sm:-translate-y-2/3 lg:-translate-y-1/2">
           <ul className="flex w-full h-full gap-x-1">
             <Tab bgColor="bg-emerald-500" text="About" onClick={() => handleTabClick("About")} />
             <Tab bgColor="bg-blue-400" text="Skills" onClick={() => handleTabClick("Skills")} />
@@ -111,12 +110,12 @@ export default function Home() {
           {activeTab === "Contact" && <ContactSection />}
         </div>
         {/* Front of the folder */}
-        <div className="absolute inset-0 z-40 origin-bottom -skew-x-3 w-full rounded-lg bg-orange-200 p-4 shadow-lg">
+        <div className="absolute inset-0 z-40 origin-bottom -skew-x-3 w-full rounded-lg bg-orange-200 p-4 shadow-lg overflow-hidden sm:overflow-visible">
           <StickerLabel text="IT'S ME DIDAR" containerClassName=" -rotate-9 translate-y-1/2" />
 
           <ScotchedPhoto
             image={{ src: getAssetPath("/photoDidar.webp"), width: 320, height: 400, alt: "Didar Lahiry" }}
-            containerClassName=" w-[43%] translate-y-[18%] translate-x-[95%] skew-x-3 rotate-6 z-20"
+            containerClassName=" w-[52%] sm:w-[43%] translate-y-[22%] sm:translate-y-[18%] translate-x-[75%] sm:translate-x-[95%] skew-x-3 rotate-4 sm:rotate-6 z-20"
           />
 
           <Image
