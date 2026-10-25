@@ -40,7 +40,7 @@ const AboutSection: React.FC = () => {
       <hr className="h-px m-6 bg-neutral-300" />
 
       {/* Profile & What I Do */}
-      <div className="p-4 m-4 border-2 rounded-2xl border-stone-300 bg-white/50 backdrop-blur-xs">
+      <div className="p-3 sm:p-4 my-3 mx-1 sm:m-4 border-2 rounded-2xl border-stone-300 bg-white/50 backdrop-blur-xs">
         <h2 className="mb-4 text-2xl font-permanent flex items-center gap-2">
           <Sparkles className="text-amber-500" size={24} /> Professional Profile
         </h2>
@@ -129,7 +129,7 @@ const AboutSection: React.FC = () => {
       <hr className="h-px m-10 bg-neutral-300" />
 
       {/* Experience Timeline */}
-      <div className="p-4 m-4 border-2 rounded-2xl border-stone-300 bg-white/50 backdrop-blur-xs">
+      <div className="p-3 sm:p-4 my-3 mx-1 sm:m-4 border-2 rounded-2xl border-stone-300 bg-white/50 backdrop-blur-xs">
         <h2 className="mb-4 text-2xl font-permanent">Experience &amp; Track Record</h2>
         <Timeline>
           <TimelineItem date="2024 - Present">

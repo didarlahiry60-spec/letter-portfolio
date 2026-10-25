@@ -88,7 +88,7 @@ export default function Home() {
         ref={folderContainerRef}
         className="absolute top-0 bottom-0 left-0 right-0 m-auto w-[92vw] h-[72vh] sm:w-[85vw] sm:h-[65vw] lg:w-[80vw] lg:h-[60vw] max-w-[106.67vh] max-h-[82vh] z-100">
         {/* Tabs over the folder */}
-        <nav className="absolute w-[95%] sm:w-2/3 h-10 sm:h-12 md:h-1/6 right-0 z-20 -translate-y-full sm:-translate-y-2/3 lg:-translate-y-1/2">
+        <nav className="absolute w-[96%] sm:w-[85%] md:w-3/4 max-w-xl right-0 z-20 top-0 h-11 sm:h-12 md:h-14 -translate-y-full">
           <ul className="flex w-full h-full gap-x-1">
             <Tab bgColor="bg-emerald-500" text="About" onClick={() => handleTabClick("About")} />
             <Tab bgColor="bg-blue-400" text="Skills" onClick={() => handleTabClick("Skills")} />

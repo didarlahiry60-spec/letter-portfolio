@@ -14,7 +14,7 @@ const SkillsSection: React.FC = () => {
       <hr className="h-px m-6 bg-neutral-300" />
 
       {/* 4 Pillars Skills */}
-      <div className="skills-shit p-4 m-4 border-2 rounded-2xl border-stone-300 bg-white/50 backdrop-blur-xs">
+      <div className="skills-shit p-3 sm:p-4 my-3 mx-1 sm:m-4 border-2 rounded-2xl border-stone-300 bg-white/50 backdrop-blur-xs">
         <h2 className="pb-4 text-2xl font-permanent">Core Disciplines</h2>
         <div className="lg:grid lg:grid-cols-2 gap-2">
           <Card
@@ -110,7 +110,7 @@ const SkillsSection: React.FC = () => {
       <hr className="h-px m-10 bg-neutral-300" />
 
       {/* Education */}
-      <div className="Education-shit p-4 m-4 border-2 rounded-2xl border-stone-300 bg-white/50 backdrop-blur-xs">
+      <div className="Education-shit p-3 sm:p-4 my-3 mx-1 sm:m-4 border-2 rounded-2xl border-stone-300 bg-white/50 backdrop-blur-xs">
         <h2 className="pb-4 text-2xl font-permanent">My Education</h2>
         <Timeline>
           <TimelineItem date="Batch 2024">

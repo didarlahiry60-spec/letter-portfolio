@@ -52,7 +52,7 @@ const ProjectsSection: React.FC = () => {
       <hr className="h-px m-6 bg-neutral-300" />
 
       {/* Empty State Card */}
-      <div className="p-6 sm:p-10 m-4 border-2 border-dashed rounded-2xl border-stone-300 bg-white/60 backdrop-blur-xs flex flex-col items-center justify-center text-center shadow-xs">
+      <div className="p-5 sm:p-10 my-3 mx-1 sm:m-4 border-2 border-dashed rounded-2xl border-stone-300 bg-white/60 backdrop-blur-xs flex flex-col items-center justify-center text-center shadow-xs">
         <div className="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center text-amber-700 mb-4 shadow-inner">
           <FolderOpen size={32} strokeWidth={1.75} />
         </div>
