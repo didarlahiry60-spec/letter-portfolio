@@ -113,6 +113,18 @@ export default function Home() {
         <div className="absolute inset-0 z-40 origin-bottom -skew-x-3 w-full rounded-lg bg-orange-200 p-4 shadow-lg overflow-hidden sm:overflow-visible">
           <StickerLabel text="IT'S ME DIDAR" containerClassName=" -rotate-9 translate-y-1/2" />
 
+          {/* Brand Logo with Name */}
+          <div className="absolute left-3 sm:left-6 md:left-8 top-[40%] -translate-y-1/2 w-[28%] sm:w-[28%] md:w-[24%] max-w-[160px] skew-x-3 pointer-events-none select-none">
+            <Image
+              src={getAssetPath("/didar-logo.webp")}
+              width={291}
+              height={246}
+              alt="Didar Lahiry Logo"
+              className="w-full h-auto drop-shadow-xs opacity-90"
+              priority
+            />
+          </div>
+
           <ScotchedPhoto
             image={{ src: getAssetPath("/photoDidar.webp"), width: 320, height: 400, alt: "Didar Lahiry" }}
             containerClassName=" w-[52%] sm:w-[43%] translate-y-[22%] sm:translate-y-[18%] translate-x-[75%] sm:translate-x-[95%] skew-x-3 rotate-4 sm:rotate-6 z-20"
