@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 কীভাবে রান করবেন (How to run)
+## কীভাবে রান করবেন (How to run)
 
 ১. টার্মিনালে এই ফোল্ডারে প্রবেশ করুন:
 ```bash
@@ -25,7 +25,7 @@ npm run dev
 
 ---
 
-## 📁 ফাইল ও ফোল্ডার স্ট্রাকচার (File Structure)
+## ফাইল ও ফোল্ডার স্ট্রাকচার (File Structure)
 
 ```text
 code/
@@ -57,7 +57,7 @@ code/
 
 ---
 
-## 🎨 যেভাবে নিজের মতো কাস্টমাইজ করবেন (Customization Tips)
+## যেভাবে নিজের মতো কাস্টমাইজ করবেন (Customization Tips)
 
 1. **আপনার নাম ও তথ্য পরিবর্তন:**
    * [app/page.tsx](file:///home/didar-lahiry/Antigravity/LETTER%20type%20port./code/app/page.tsx)-এ `<StickerLabel text="Barth's Stuff" />` বদলে আপনার নাম দিন (যেমন: `"Didar's Portfolio"` বা `"My Stuff"`).
